@@ -1,0 +1,25 @@
+.entrytable {
+    width: 600px;
+    margin-bottom: 30px;
+    border: 2px solid #c442c9;
+    padding: 5px;
+    margin: 40px auto;
+}
+
+.entrytable th {
+    width: 10em;
+    background-color: #f291ff;
+    border: 1px solid #a047a0;
+}
+
+.entrytable td {
+    padding: 10px 20px;
+    border: 1px solid #a047a0;
+    text-align: center;
+    padding: 6px;
+    height: 60px;
+}
+
+.entrytable caption {
+    margin-bottom: 10px;
+}

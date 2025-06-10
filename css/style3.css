@@ -1,0 +1,28 @@
+body{
+    background: #f5e6ff;
+    font-family: "微軟正黑體";
+}
+.d4{
+    background-color: #fed7ff;
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+}
+.d4 h2{
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #f4c9ff;
+    border-left: 10px solid #e888fc;
+    color: #4b2263;
+    min-width: 600px;
+}
+.d1{
+    text-align: center;
+    padding: 10px;
+}
+.d1 img{
+    width: 300px;
+	border: 2px solid #ad1fff;
+	padding: 5px;
+	border-radius: 100px;
+}

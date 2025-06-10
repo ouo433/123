@@ -1,0 +1,40 @@
+body{
+    background: #f1f9ff;
+    font-family: "微軟正黑體";
+}
+
+.f2{
+    padding: 0 30px;
+    color: #4659b0;
+}
+.f2 h2{
+    margin-bottom: 30px;
+    color: #1c4061;
+    border-left: 10px solid #5a94ff;
+    padding: 10px;
+}
+.f2 img{
+    max-width: 400px;
+    height: 100%;
+    width: 40%;
+}
+hr{
+    border-color: #7439e2;
+}
+.a1{
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+.d1{
+    background-color: #f1f9ff;
+    text-align: center;
+    padding: 10px;
+}
+.d1 img{
+    width: 300px;
+	border: 2px solid #6366ff;
+	padding: 5px;
+	border-radius: 100px;
+}

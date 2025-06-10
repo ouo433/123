@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 外層容器置中 */
+.f1 {
+  display: flex;
+  justify-content: center;  /* 導覽列置中 */
+  padding: 10px 0;
+
+
+/* 主選單橫向排列 */
+.drop-down-menu {
+  display: flex;
+}
+
+/* 清除預設 ul 樣式 */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 導覽列樣式 */
+ul.drop-down-menu {
+  border: #ff9999 2px solid;
+}
+
+/* 導覽列每個項目 */
+ul.drop-down-menu > li {
+  position: relative;
+  width: 120px;             
+  text-align: center;
+  border-right: #ffd5d5 2px solid;
+}
+
+/* 最後一個不加右邊線 */
+ul.drop-down-menu > li:last-child {
+  border-right: none;
+}
+
+/* 導覽連結樣式 */
+ul.drop-down-menu a {
+  background-color: #ffbec2;
+  color: #680b21;
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  line-height: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+/* 滑過樣式 */
+ul.drop-down-menu a:hover,
+ul.drop-down-menu li:hover > a {
+  background-color: #ead0fb;
+  color: #281c5e;
+}
+
+/* 下拉選單樣式 */
+ul.drop-down-menu ul {
+  position: absolute;
+  z-index: 99;
+  left: -1px;
+  top: 100%;
+  min-width: 120px;         
+  display: none;
+}
+
+/* 顯示下拉選單 */
+ul.drop-down-menu li:hover > ul {
+  display: block;
+}
+}
