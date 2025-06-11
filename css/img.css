@@ -29,7 +29,7 @@ body {
     padding: 10px;
     width: 80%;
     min-width: 300px;
-    margin: 40px 10%;  /* 垂直外距 40px，水平外距為左右各 10% */
+    margin: 40px 10%; /* 垂直外距 40px，水平外距為左右各 10% */
 }
 .x2 h2{
     color: #632225;
@@ -38,17 +38,17 @@ body {
 }
 
 .y1 {
-  margin: 0 100px;
+  margin: 0 100px; /* 左右各 100px 外距 */
   color: #4a0311;
 }
 
 .d1{
-    text-align: center;
+    text-align: center; /* 文字置中 */
     padding: 10px;
 }
 .d1 img{
   width: 300px;
-	border: 2px solid #ffcb1f;
-	padding: 5px;
-	border-radius: 100px;
+	border: 2px solid #ffcb1f; /* 外框實線 */
+	padding: 5px; /* 圖片與邊框之間的空隙 */
+	border-radius: 50%;
 }
