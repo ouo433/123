@@ -25,7 +25,7 @@ body {
 }
 .x1 h1 {
     width: 300px;
-    margin: 40px auto;
+    margin: 40px auto; /* 上下 40px，左右自動置中 */
     padding: 10px;
     border: 5px solid #ffe2f0;
     background-color: #faa8d1;
@@ -34,10 +34,10 @@ body {
 }
 
 .x3 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: flex; /* 使用 Flex 排版 */
+    justify-content: center; /* 水平置中 */
+    flex-wrap: wrap;  /* 超過寬度會換行 */
+    gap: 20px;   /* 間距 */
     padding: 20px;
     align-items: flex-start;
 }
@@ -51,7 +51,6 @@ body {
 .y2 h2{
     padding: 10px;
     margin-bottom: 30px;
-    border: 1px solid #ffd2d8;
     border-left: 10px solid #ed5d7a;
     color: #632225;
 }
@@ -63,7 +62,7 @@ body {
     padding: 10px;
     display: block;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 10px; /* 邊角圓弧 */
     margin: 20px; 
 }
 .y2 a:hover{
@@ -81,15 +80,8 @@ body {
 .y3 h2{
     padding: 10px;
     margin-bottom: 30px;
-    border: 1px solid #ffd2d8;
     border-left: 10px solid #ed5d7a;
     color: #632225;
-}
-
-body {
-  background: #fff1f4;
-  margin: 0;
-  padding: 0;
 }
 
 .x2 img{
