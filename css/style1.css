@@ -87,23 +87,7 @@ body {
 .x2 img{
   width: 25px;
 }
-.x2 a {
-    width: 120px;
-    background-color: #ffb7c3;
-    text-decoration: none;
-    color: #784451;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    gap: 6px;
-    border-radius: 10px;
-    margin: 20px;
-}
-.x2 a:hover{
-    color: #281c5e;
-    background-color: #ead0fb;
-}
+
 .x2{
     background-color: #ffd2d8;
     padding: 10px;
