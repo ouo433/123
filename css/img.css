@@ -1,24 +1,24 @@
 body {
-  background:  #fffcd1;
-  margin: 0;
-  padding: 0;
+  background:  #fffcd1; /* 背景 */
+  margin: 0;   /* 外距 */
+  padding: 0;  /* 內距 */
 }
 
 .x2 img{
   width: 25px;
 }
 .x2 a {
-    width: 120px;
-    background-color: #ffd992;
-    text-decoration: none;
-    color: #786644;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    gap: 6px;
-    border-radius: 10px;
+    width: 120px;              /* 固定寬度 */
+    background-color: #ffd992; /* 背景 */
+    text-decoration: none;     /* 移除底線 */
+    color: #786644;            /* 字體顏色 */
+    display: flex;             /* 使用 Flex 排列內容 */
+    justify-content: center;   /* 水平置中 */
+    align-items: center;       /* 垂直置中 */
+    gap: 6px;                  /* 元素間距 */
+    border-radius: 10px;       /* 圓角邊框 */
     margin: 20px;
+    padding: 10px;
 }
 .x2 a:hover{
     color: #281c5e;
@@ -29,12 +29,11 @@ body {
     padding: 10px;
     width: 80%;
     min-width: 300px;
-    margin: 40px 10%;
+    margin: 40px 10%;  /* 垂直外距 40px，水平外距為左右各 10% */
 }
 .x2 h2{
     padding: 10px;
-    margin-bottom: 30px;
-    border-left: 10px solid #ffcb6a;
+    margin-bottom: 30px;  /* 底部外距 */
     color: #632225;
     margin: 50px;
 }
