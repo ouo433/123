@@ -1,36 +1,33 @@
-@charset "utf-8";
-/* CSS Document */
-
 /* 外層容器置中 */
 .f1 {
   display: flex;
   justify-content: center;  /* 導覽列置中 */
-  padding: 10px 0;
+  padding: 10px 0; /* 上下內距 10px，左右為 0 */
 
 
 /* 主選單橫向排列 */
 .drop-down-menu {
-  display: flex;
+  display: flex; /* 導覽列選項水平排列 */
 }
 
 /* 清除預設 ul 樣式 */
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  margin: 0;        /* 移除外距 */
+  padding: 0;       /* 移除內距 */
+  list-style: none; /* 移除項目符號 */
 }
 
 /* 導覽列樣式 */
 ul.drop-down-menu {
-  border: #ff9999 2px solid;
+  border: #ff9999 2px solid; /* 邊框 */
 }
 
 /* 導覽列每個項目 */
 ul.drop-down-menu > li {
   position: relative;
-  width: 120px;             
-  text-align: center;
-  border-right: #ffd5d5 2px solid;
+  width: 120px;             /* 每個項目固定寬度 */
+  text-align: center;       /* 文字置中 */
+  border-right: #ffd5d5 2px solid;  /* 右邊線 */
 }
 
 /* 最後一個不加右邊線 */
@@ -42,11 +39,11 @@ ul.drop-down-menu > li:last-child {
 ul.drop-down-menu a {
   background-color: #ffbec2;
   color: #680b21;
-  display: block;
-  padding: 0;
-  text-decoration: none;
-  line-height: 40px;
-  width: 100%;
+  display: block; /* 占滿整個 li 區塊 */
+  padding: 0;   /* 無內距 */
+  text-decoration: none; /* 移除底線 */
+  line-height: 40px;  /* 垂直高度統一 */
+  width: 100%;        /* 撐滿 li 寬度 */
   height: 100%;
 }
 
@@ -59,12 +56,12 @@ ul.drop-down-menu li:hover > a {
 
 /* 下拉選單樣式 */
 ul.drop-down-menu ul {
-  position: absolute;
-  z-index: 99;
-  left: -1px;
-  top: 100%;
-  min-width: 120px;         
-  display: none;
+  position: absolute; /* 絕對定位讓子選單浮出主選單 */
+  z-index: 99;        /* 疊在上層 */
+  left: -1px;         /* 稍微靠左對齊 */
+  top: 100%;          /* 緊貼主選單下方 */
+  min-width: 120px;   /* 最小寬度與主選單一致 */
+  display: none;      /* 預設不顯示 */
 }
 
 /* 顯示下拉選單 */
