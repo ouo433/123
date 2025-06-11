@@ -1,3 +1,4 @@
+/*首頁*/
 body {
   background: #fff1f4;
   margin: 0;
@@ -15,20 +16,20 @@ h1 {
 }
 .d1{
     background-color: #facad4;
-    text-align: center;
+    text-align: center; /* 區塊內文字與圖片置中 */
     padding: 10px;
 }
 .d1 img{
     width: 400px;
-    border-radius: 25%;
-    object-fit: cover;
-    box-shadow: 0 4px 12px #1f0101;
+    border-radius: 25%;    /* 邊角圓弧 */
+    object-fit: cover;  /* 保持比例裁切圖片填滿容器 */
+    box-shadow: 0 4px 12px #1f0101;  /* 陰影效果：往下 4px、模糊 12px、深紅色陰影 */
 }
 .d1 hr{
-    border-color: #e239aa;
+    border-color: #e239aa;   /* 水平線顏色 */
     width: 300px;
 }
 .d1 p{
-    font-weight: bold;
+    font-weight: bold;   /* 粗體字 */
     color: #640933;
 }
