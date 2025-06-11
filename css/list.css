@@ -1,25 +1,23 @@
 .entrytable {
-    width: 600px;
-    margin-bottom: 30px;
-    border: 2px solid #c442c9;
+    width: 600px;              /* 表格寬度 */ 
+    border: 2px solid #c442c9; /* 表格外框 */
     padding: 5px;
-    margin: 40px auto;
+    margin: 40px auto;         /* 表格上下外距為 40px，左右自動（讓表格置中） */
 }
 
 .entrytable th {
-    width: 10em;
+    width: 10em;               /* 每個表頭欄位的寬度 */
     background-color: #f291ff;
-    border: 1px solid #a047a0;
+    border: 1px solid #a047a0; /* 表頭邊框 */
 }
 
 .entrytable td {
-    padding: 10px 20px;
-    border: 1px solid #a047a0;
-    text-align: center;
+    border: 1px solid #a047a0; /* 表格格線 */
+    text-align: center; /* 內容置中 */
     padding: 6px;
-    height: 60px;
+    height: 60px; /* 單元格高 */
 }
 
 .entrytable caption {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* 表格標題與表格本體之間的間距 */
 }
