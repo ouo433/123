@@ -50,5 +50,5 @@ body {
   	width: 300px;
 	border: 2px solid #ffcb1f; /* 外框實線 */
 	padding: 5px;              /* 圖片與邊框之間的空隙 */
-	border-radius: 50%;        /* 圓角邊框 */
+	border-radius: 100px;        /* 圓角邊框 */
 }
