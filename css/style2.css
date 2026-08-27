@@ -1,40 +1,99 @@
-body{
-    background: #f1f9ff;
-    font-family: "微軟正黑體";
+* {
+    box-sizing: border-box;
 }
 
-.f2{
-    padding: 0 30px;
-    color: #4659b0;
+body {
+    margin: 0;
+    background: #fff1f4;
+    font-family: "Microsoft JhengHei", "微軟正黑體", sans-serif;
 }
-.f2 h2{
-    margin-bottom: 30px;
-    color: #1c4061;
-    border-left: 10px solid #5a94ff;
+
+.f2 {
+    width: min(1100px, 92%);
+    margin: 30px auto;
+    padding: 0 30px 30px;
+    color: #640933;
+}
+
+.f2 h1 {
+    text-align: center;
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+
+.f2 h2 {
+    margin: 30px 0;
+    color: #632225;
+    border-left: 10px solid #ed5d7a;
     padding: 10px;
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
 }
-.f2 img{
-    max-width: 400px;
-    height: 100%;
-    width: 40%;
+
+hr {
+    border: 0;
+    border-top: 2px solid #e239aa;
+    margin: 30px 0;
 }
-hr{
-    border-color: #7439e2;
-}
-.a1{
-    justify-content: center;
+
+/* 圖片容器 */
+.a1 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     gap: 20px;
 }
 
-.d1{
-    background-color: #f1f9ff;
+/* 作品圖片 */
+.f2 img {
+    display: block;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.d1 {
+    background-color: #fff1f4;
     text-align: center;
     padding: 10px;
 }
-.d1 img{
-    width: 300px;
-	border: 2px solid #6366ff;
-	padding: 5px;
-	border-radius: 100px;
+
+.d1 img {
+    display: block;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid #ed5d7a;
+    padding: 5px;
+    border-radius: 100px;
+}
+
+/* 手機版 */
+@media (max-width: 600px) {
+    .f2 {
+        width: 94%;
+        margin: 15px auto;
+        padding: 0 15px 20px;
+    }
+
+    .f2 h2 {
+        border-left-width: 6px;
+        padding: 8px;
+        margin: 22px 0;
+    }
+
+    .a1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .f2 img,
+    .d1 img {
+        width: 250px;
+        max-width: 100%;
+    }
 }
