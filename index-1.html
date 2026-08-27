@@ -13,55 +13,121 @@
 </head>
 
 <body>
+	<!-- 1. 頂部導覽選單（維持你原本的設定） -->
 	<div class="f1">		
 		<ul class="drop-down-menu">
 			<li><a href="./index.html">首頁</a></li>
 			<li><a href="./index-3.html">聯絡資訊</a></li>				
 		</ul>
 	</div>
-	<div class="f2">
+
+	<!-- 2. Q版 作品區塊 -->
+	<div class="f2 container my-4">
 		<h1>Q版◑ω◐</h1>
 		<hr>
-		<h2>頭貼</h2>
-		<div class="a1 row text-center">
-    		<div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-        		<img src="img/IMG_1-1-1.png" alt="1" class="img-fluid">
-    		</div>
-    		<div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-        		<img src="img/IMG_1-1-2.png" alt="2" class="img-fluid">
-    		</div>
-    		<div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-        		<img src="img/IMG_1-1-3.png" alt="3" class="img-fluid">
-    		</div>
-    		<div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-        		<img src="img/IMG_1-1-4.png" alt="4" class="img-fluid">
-    		</div>
-		</div>
-		<hr>
-		<h2>半身圖</h2>
-		<div class="a1">
-			<img src="" alt="1">
-		</div>
-		<hr>
-		<h2>全身圖</h2>
-		<div class="a1">
-			<img src="" alt="1">
-		</div>
-		<hr>
-		<h2>桌布</h2>
-		<div class="a1">
-			<img src="" alt="1">
-		</div>
-		<hr>
-	</div>
-	<div class="f2">
-		<h1>線條插畫風◑ω◐</h1>
-		<hr>
-		<div class="a1">
-			<img src="" alt="1">
+		
+		<h2>精選作品（每頁三張）</h2>
+		
+		<!-- Q版輪播外殼 (id: qVersionCarousel) -->
+		<div id="qVersionCarousel" class="carousel slide" data-bs-ride="false">
+			<div class="carousel-inner">
+				
+				<!-- 【Q版 - 第 1 頁】：內含 3 張圖 (必須有 active) -->
+				<div class="carousel-item active">
+					<div class="row justify-content-center text-center">
+						<div class="col-lg-4 col-md-6 col-sm-12 p-2">
+							<img src="img/IMG_1-1-1.png" alt="頭貼1" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;">
+							<p class="mt-2">頭貼 01</p>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 p-2">
+							<img src="img/IMG_1-1-2.png" alt="頭貼2" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;">
+							<p class="mt-2">頭貼 02</p>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 p-2">
+							<img src="img/IMG_1-1-3.png" alt="頭貼3" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;">
+							<p class="mt-2">頭貼 03</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- 【Q版 - 第 2 頁】：內含另外 3 張圖（這裡放你的第4張圖與後續作品） -->
+				<div class="carousel-item">
+					<div class="row justify-content-center text-center">
+						<div class="col-lg-4 col-md-6 col-sm-12 p-2">
+							<img src="img/IMG_1-1-4.png" alt="頭貼4" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;">
+							<p class="mt-2">頭貼 04</p>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 p-2">
+							<!-- 補上你未來的半身圖、全身圖或桌布路徑 -->
+							<img src="img/placeholder-half.png" alt="半身圖1" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;">
+							<p class="mt-2">半身圖 01</p>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 p-2">
+							<img src="img/placeholder-full.png" alt="全身圖1" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;">
+							<p class="mt-2">全身圖 01</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Q版 左右切換箭頭（外觀優化為圓形黑色半透明，好點擊又清晰） -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#qVersionCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.6); border-radius: 50%; padding: 20px;"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#qVersionCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.6); border-radius: 50%; padding: 20px;"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
 		</div>
 		<hr>
 	</div>
 
+	<!-- 3. 線條插畫風 作品區塊 -->
+	<div class="f2 container my-4">
+		<h1>線條插畫風◑ω◐</h1>
+		<hr>
+		
+		<!-- 線條風輪播外殼 (id: lineStyleCarousel) -->
+		<div id="lineStyleCarousel" class="carousel slide" data-bs-ride="false">
+			<div class="carousel-inner">
+				
+				<!-- 【線條風 - 第 1 頁】 -->
+				<div class="carousel-item active">
+					<div class="row justify-content-center text-center">
+						<div class="col-lg-4 col-md-6 col-sm-12 p-2">
+							<img src="img/line-1.png" alt="線條1" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;">
+							<p class="mt-2">插畫 01</p>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 p-2">
+							<img src="img/line-2.png" alt="線條2" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;">
+							<p class="mt-2">插畫 02</p>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 p-2">
+							<img src="img/line-3.png" alt="線條3" class="img-fluid rounded" style="max-height: 250px; object-fit: contain;">
+							<p class="mt-2">插畫 03</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- 線條風 左右切換箭頭 -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#lineStyleCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.6); border-radius: 50%; padding: 20px;"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#lineStyleCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.6); border-radius: 50%; padding: 20px;"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<hr>
+	</div>
+
+	<!-- 💡 核心關鍵：必須在結尾引入 Bootstrap 的 JS 驅動程式，箭頭點擊才會生效！ -->
+	<script src="https://jsdelivr.net"></script>
 </body>
+
 </html>
