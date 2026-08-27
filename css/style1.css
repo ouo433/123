@@ -58,3 +58,10 @@ body {
   margin-left: 100px;
   color: #4a0311;
 }
+
+@media (max-width: 768px) {
+  .y1 {
+    margin: 5%;
+    color: #4a0311;
+  }
+}
